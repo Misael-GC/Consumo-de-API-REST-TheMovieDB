@@ -1,0 +1,1 @@
+console.log(`API URL = https://gfhdjskl?api_key${API_KEY}`);
