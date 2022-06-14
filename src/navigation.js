@@ -116,3 +116,14 @@ function homePage() {
     genericSection.classList.remove('inactive');
     movieDetailSection.classList.add('inactive');
   }
+
+//Opción de operadores ternarios
+// location.hash.startsWith('#trends')    ? trendsPage()       :
+// location.hash.startsWith('#search=')   ? searchPage()       :
+// location.hash.startsWith('#movie=')    ? movieDetailsPage() :
+// location.hash.startsWith('#category=') ? categoriesPage()   :
+// homePage()
+
+// y los addEventListener de los botones SearchformBtn, trendingBtn y arrowBtn pueden escribirse en una sola línea omitiendo las llaves:
+// arrowBtn.addEventListener('click', () => location.hash = 'home')
+//Aporte: Orlando Díaz Torrealva
