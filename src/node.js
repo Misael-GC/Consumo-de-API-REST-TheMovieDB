@@ -25,3 +25,14 @@ const trendingBtn = document.querySelector('.trendingPreview-btn');
 const movieDetailTitle = document.querySelector('.movieDetail-title');
 const movieDetailDescription = document.querySelector('.movieDetail-description');
 const movieDetailScore = document.querySelector('.movieDetail-score');
+
+// Aporte de edmir01:  Si no quieren que su archivo de nodes.js este lleno de ‘document.querySelector()’ y verlo un poco mas limpio, les comparto un tip que utilizo mucho.
+//Creen esta funcion al inicio del archivo nodes.js
+
+//const $ = (id) =>document.querySelector(id);
+
+//Y ahora cada ‘document.querySelector()’ lo pueden cambiar solamente por:
+
+//const headerSection = $('#header');
+
+//Es algo parecido a jQuery🥴
