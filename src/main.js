@@ -14,12 +14,13 @@ const api = axios.create({
     },
 })
 
+
 async function getTrendingMoviesPreview(){
     const {data} = await api ('trending/movie/day');
     const movies = data.results;
     
-    trendingMoviesPreviewList.innerHTML = "";
-
+    trendingMoviesPreviewList.innerHTML = ""; /*Aqui no se repite*/
+/*Checa a partir de aqui */
     movies.forEach(movie => {
         const movieContainer = document.createElement('div');
         movieContainer.classList.add('movie-container');

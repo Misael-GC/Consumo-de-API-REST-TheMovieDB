@@ -12,6 +12,7 @@ arrowBtn.addEventListener('click', () => {
 window.addEventListener('DOMContentLoaded', navigator, false);
 window.addEventListener('hashchange', navigator, false);
 
+
 function navigator(){
     console.log({location});
 
@@ -68,11 +69,11 @@ function homePage() {
     //['#category', 'id-name']
     const [_, categoryData] =location.hash.split('=');
     const [categoryId, categoryName] = categoryData.split('-');
+    const newName = categoryName.replace('%20', ' '); /*Aporte para corregir el %20 que aparecia en el titulo entre 2 palabras */
 
-    headerCategoryTitle.innerHTML = categoryName;
+    headerCategoryTitle.innerHTML = newName;
 
-    getMoviesByCategory(categoryId);
-    
+    getMoviesByCategory(categoryId, /*newName*/);
   }
 
   function movieDetailsPage() {
