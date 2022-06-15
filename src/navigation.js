@@ -73,7 +73,8 @@ function homePage() {
     const newName2 =decodeURI(categoryName);
     headerCategoryTitle.innerHTML = newName2;
 
-    getMoviesByCategory(categoryId, /*newName*/);
+    getMoviesByCategory(categoryId);
+    window.scrollTo(0, 0); /*nos ayuda a que al cambiar de página nos lleve al inicio y no al final*/
   }
 
   function movieDetailsPage() {
