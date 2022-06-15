@@ -69,9 +69,9 @@ function homePage() {
     //['#category', 'id-name']
     const [_, categoryData] =location.hash.split('=');
     const [categoryId, categoryName] = categoryData.split('-');
-    const newName = categoryName.replace('%20', ' '); /*Aporte para corregir el %20 que aparecia en el titulo entre 2 palabras */
-
-    headerCategoryTitle.innerHTML = newName;
+    //const newName = categoryName.replace('%20', ' '); /*Aporte para corregir el %20 que aparecia en el titulo entre 2 palabras */
+    const newName2 =decodeURI(categoryName);
+    headerCategoryTitle.innerHTML = newName2;
 
     getMoviesByCategory(categoryId, /*newName*/);
   }
