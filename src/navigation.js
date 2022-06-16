@@ -1,5 +1,6 @@
 searchFormBtn.addEventListener('click', ()=>{
-  location.hash='#search=' + searchFormInput.value;
+  location.hash='#search=' + searchFormInput.value.trim().replace(/\s+/g, '');
+  console.log(searchFormInput.value.trim().replace(/\s+/g, ''));
 });
 trendingBtn.addEventListener('click', ()=>{
   location.hash='#trends=';
