@@ -1,7 +1,8 @@
 searchFormBtn.addEventListener('click', ()=>{
-  location.hash='#search=' + searchFormInput.value.trim().replace(/\s+/g, '');
-  console.log(searchFormInput.value.trim().replace(/\s+/g, ''));
+  location.hash='#search=' + searchFormInput.value.split(" ").join('');
+  console.log(searchFormInput.value.split(" ").join(''));
 });
+
 trendingBtn.addEventListener('click', ()=>{
   location.hash='#trends=';
 });
