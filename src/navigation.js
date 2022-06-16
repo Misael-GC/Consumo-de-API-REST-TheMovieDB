@@ -27,6 +27,8 @@ function navigator(){
       } else {
         homePage();
       }
+      // document.body.scrollTop=0;
+      document.documentElement.scrollTop = 0;
 }
 
 
@@ -74,7 +76,7 @@ function homePage() {
     headerCategoryTitle.innerHTML = newName2;
 
     getMoviesByCategory(categoryId);
-    window.scrollTo(0, 0); /*nos ayuda a que al cambiar de página nos lleve al inicio y no al final*/
+   // window.scrollTo(0, 0); /*nos ayuda a que al cambiar de página nos lleve al inicio y no al final*/
   }
 
   function movieDetailsPage() {
