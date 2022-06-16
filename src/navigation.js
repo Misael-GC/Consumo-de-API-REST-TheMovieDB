@@ -1,6 +1,9 @@
 searchFormBtn.addEventListener('click', ()=>{
   location.hash='#search=' + searchFormInput.value.split(" ").join('');
-  console.log(searchFormInput.value.split(" ").join(''));
+});
+
+arrowBtn.addEventListener('click', () => {
+  location.hash = window.history.back();
 });
 
 trendingBtn.addEventListener('click', ()=>{
