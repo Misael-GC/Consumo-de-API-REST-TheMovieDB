@@ -2,16 +2,13 @@ searchFormBtn.addEventListener('click', ()=>{
   location.hash='#search=' + searchFormInput.value.split(" ").join('');
 });
 
-arrowBtn.addEventListener('click', () => {
-  location.hash = window.history.back();
-});
-
 trendingBtn.addEventListener('click', ()=>{
   location.hash='#trends=';
 });
 
 arrowBtn.addEventListener('click', () => {
-  location.hash = '#home'
+  history.back();
+  // location.hash = '#home'
 });
 
 window.addEventListener('DOMContentLoaded', navigator, false);
@@ -135,6 +132,9 @@ function homePage() {
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.remove('inactive');
     movieDetailSection.classList.add('inactive');
+
+    headerCategoryTitle.innerHTML = 'Tendencias 0.o';
+    getTrendingMovies();
   }
 
 //Opción de operadores ternarios
