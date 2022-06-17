@@ -51,6 +51,8 @@ function homePage() {
 
     getTrendingMoviesPreview();
     getCategoriesPreview()
+
+    headerSection.style.background = ''; //aporte para limpiar el background del poster de fondo traído por la función getMovieById(id) desde main.js clase 15
   }
   
   function categoriesPage() {
