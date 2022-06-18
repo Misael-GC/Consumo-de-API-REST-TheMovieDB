@@ -135,4 +135,5 @@ async function getRelatedMoviesId(id){
     const relatedMovies = data.results;
 
     createMovies(relatedMovies, relatedMoviesContainer);
+    relatedMovies.scrollTo(0,0); //Aporte, para que la página siempre empiece al inicio y no al final
 }
