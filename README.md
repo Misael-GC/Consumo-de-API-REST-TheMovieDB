@@ -1,5 +1,5 @@
 # consumo-de-api-rest-themoviedb
-´## Introducción
+## Introducción
 Sitio web inspirado en búsqueda de películas, dividiendolo por categorías, en este proyecto se implementa API REST, para crear un proyecto con conexión a una API real. Desarrollo de una Single Page Application con hash navigation. Creación de un buscador de películas de TheMovieDB.
 ## Skills
 * Maquetación: HTML y CSS
